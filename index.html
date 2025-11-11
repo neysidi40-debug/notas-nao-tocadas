@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notas Não Tocadas 🎧</title>
+  <style>
+    /* ======== ESTILO GERAL ======== */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #eee;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      display: flex;
+      justify-content: center;
+      z-index: 1000;
+      backdrop-filter: blur(5px);
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      color: #b041ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 10px #b041ff;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 20px 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      font-size: 2.2em;
+      color: #b041ff;
+      text-shadow: 0 0 10px #b041ff;
+      margin-bottom: 20px;
+      animation: glow 2s infinite alternate;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #080008;
+      color: #b041ff;
+      font-size: 0.9em;
+      border-top: 1px solid #b041ff33;
+    }
+
+    /* ======== ANIMAÇÕES ======== */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #b041ff; }
+      to { text-shadow: 0 0 20px #b041ff; }
+    }
+
+    /* ======== BOTÃO VOLTAR AO TOPO ======== */
+    #topBtn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #b041ff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+      box-shadow: 0 0 10px #b041ff;
+      transition: all 0.3s ease;
+    }
+
+    #topBtn:hover {
+      box-shadow: 0 0 20px #b041ff;
+      transform: scale(1.1);
+    }
+
+    /* ======== BANNERS ======== */
+    .banner {
+      width: 100%;
+      height: 50vh;
+      background-size: cover;
+      background-position: center;
+      border-bottom: 2px solid #b041ff55;
+      margin-bottom: 30px;
+      filter: brightness(0.7);
+      animation: fadeIn 2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#lilxan">Lil Xan</a>
+      <a href="#xxxtentacion">XXXTentacion</a>
+      <a href="#lilpeep">Lil Peep</a>
+      <a href="#matue">Matuê</a>
+      <a href="#teto">Teto</a>
+      <a href="#brandao">Brandão</a>
+    </nav>
+  </header>
+
+  <!-- Página inicial -->
+  <section id="inicio">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4');"></div>
+    <h2>Notas Não Tocadas 🎧</h2>
+    <p>Um espaço criado para quem vive e respira música.  
+      Aqui você encontra curiosidades, histórias e segredos não contados  
+      sobre artistas que marcaram uma geração.  
+      Explore o som, a alma e a inspiração por trás de cada batida. 💜</p>
+  </section>
+
+  <!-- LIL XAN -->
+  <section id="lilxan">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1518972559570-0b8de1207c6b');"></div>
+    <h2>Lil Xan</h2>
+    <ul>
+      <li>O nome artístico “Xan” vem do remédio ansiolítico Xanax, que ele usou como metáfora para sua fase difícil.</li>
+      <li>Antes da fama, ele chegou a trabalhar limpando ruas e vendendo fotos de artistas para sobreviver.</li>
+      <li>Seu álbum *Total Xanarchy* fala sobre dependência e autoconhecimento.</li>
+      <li>Após superar o vício, ele passou a usar sua influência para alertar sobre os perigos das drogas.</li>
+    </ul>
+  </section>
+
+  <!-- XXXTENTACION -->
+  <section id="xxxtentacion">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1518972559570-0b8de1207c6b');"></div>
+    <h2>XXXTentacion</h2>
+    <ul>
+      <li>Seu nome artístico vem de “tentação desconhecida” em espanhol.</li>
+      <li>Era conhecido pela mistura de estilos — do trap ao rock alternativo.</li>
+      <li>Usava suas letras para expressar dor, solidão e busca por redenção.</li>
+      <li>Mesmo após sua morte, suas músicas continuam no topo das paradas.</li>
+    </ul>
+  </section>
+
+  <!-- LIL PEEP -->
+  <section id="lilpeep">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f');"></div>
+    <h2>Lil Peep</h2>
+    <ul>
+      <li>Lil Peep foi um dos pioneiros do emo rap, misturando sons melancólicos com trap.</li>
+      <li>Suas tatuagens tinham significados pessoais profundos, como “Crybaby” na testa.</li>
+      <li>Era um símbolo da geração que lutava contra ansiedade e solidão.</li>
+      <li>Mesmo após sua partida, continua influenciando artistas do mundo todo.</li>
+    </ul>
+  </section>
+
+  <!-- MATUÊ -->
+  <section id="matue">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2');"></div>
+    <h2>Matuê</h2>
+    <ul>
+      <li>Um dos principais nomes do trap brasileiro, conhecido pelo flow e letras intensas.</li>
+      <li>Antes de estourar, Matuê estudou produção musical em Los Angeles.</li>
+      <li>Seus clipes são cheios de simbolismo e estética futurista.</li>
+      <li>É fundador da 30PRAUM, produtora que revelou grandes talentos como Teto.</li>
+    </ul>
+  </section>
+
+  <!-- TETO -->
+  <section id="teto">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3');"></div>
+    <h2>Teto</h2>
+    <ul>
+      <li>Ganhou destaque nas redes sociais antes mesmo de lançar oficialmente suas músicas.</li>
+      <li>É conhecido por letras afiadas e batidas envolventes.</li>
+      <li>Foi um dos primeiros artistas da nova geração do trap brasileiro.</li>
+      <li>Seu sucesso inspirou muitos jovens artistas independentes.</li>
+    </ul>
+  </section>
+
+  <!-- BRANDÃO -->
+  <section id="brandao">
+    <div class="banner" style="background-image: url('https://images.unsplash.com/photo-1516280030429-27679b3dc9cf');"></div>
+    <h2>Brandão</h2>
+    <ul>
+      <li>Brandão mistura trap com elementos do funk e da música eletrônica.</li>
+      <li>Suas letras falam sobre superação, fama e a realidade da rua.</li>
+      <li>É conhecido pelo estilo visual marcante e pelas colaborações no cenário do trap.</li>
+      <li>Representa a nova geração que mistura arte, moda e música de forma autêntica.</li>
+    </ul>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    © 2025 Notas Não Tocadas — Criado por Kapu 🎧
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="topBtn" onclick="scrollToTop()">⬆</button>
+
+  <script>
+    // Mostrar botão ao rolar
+    window.onscroll = function() {
+      const btn = document.getElementById("topBtn");
+      btn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
